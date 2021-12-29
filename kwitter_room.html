@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>~ LetsChat ~</title>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumar+One&family=Oi&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="kwitter_room.css">
+
+</head>
+<body>
+<div class="container">
+<button id="logout" class="btn"> Logout</button>
+	<center>
+		<h1 class="header">	
+            LetsChat <svg xmlns="http://www.w3.org/2000/svg" height="100px" width="75px" viewBox="0 -38 50 50" fill="currentColor">
+                    <path fill-rule="evenodd" d="M18 5v8a2 2 0 01-2 2h-5l-5 4v-4H4a2 2 0 01-2-2V5a2 2 0 012-2h12a2 2 0 012 2zM7 8H5v2h2V8zm2 0h2v2H9V8zm6 0h-2v2h2V8z" clip-rule="evenodd" />
+                </svg>
+        </h1>
+        <br>
+        <h3 id="nameLab" class="lbl"></h3>
+        <br>
+		<div class="form-group input_div_room_page">
+			<label class="lbl">#Add Room:</label>
+			<input id="roomNameInp" class="form-control" placeholder="* ~ write room name here ~ *">
+
+		</div>
+        <button id="addR" onclick="addRoom()" class="btn">Add Room</button>
+        <br>
+        <br>
+        <br>
+        <br>
+		<h3 class="lbl">#TRENDING ROOMS</h3>
+		<div id="output"></div>
+	
+	</center>
+</div>
+<script src="kwitter_room.js"></script>
+</body>
+</html>
