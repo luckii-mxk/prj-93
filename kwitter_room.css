@@ -67,6 +67,11 @@
 
 }
 
+#output:hover 
+{
+    cursor: pointer;
+}
+
 .header
 {
 	color: #F1AEA2;
